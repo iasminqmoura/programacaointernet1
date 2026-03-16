@@ -1,0 +1,48 @@
+body{
+    background-color: #e9b3ff;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+h1{
+    color: #6513a8;
+    text-align: center;
+}
+
+.texto-principal{
+    font-size: 18px;
+    color: #333;
+}
+
+#titulo-principal{
+    text-transform: uppercase;
+}
+
+nav{
+    margin: 20px 0;
+}
+
+nav a{
+    margin-right: 15px;
+    text-decoration: none;
+    color: #6513a8;
+}
+
+footer{
+    margin-top: 40px;
+    font-size: 10px;
+    color: #888;
+}
+
+.card{
+    width: 300px;
+
+    padding: 20px;
+
+    border: 2px solid #6513a8;
+
+    margin: 30px auto;
+
+    box-sizing: border-box; 
+
+    background-color: #f3d6ff;
+}
