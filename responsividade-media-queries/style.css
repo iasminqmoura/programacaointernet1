@@ -1,0 +1,325 @@
+/* ============================= */
+/* Reset e boas práticas         */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================= */
+/* Configurações gerais          */
+/* ============================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1f1f1f;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ============================= */
+/* Estrutura principal           */
+/* ============================= */
+
+.pagina {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* ============================= */
+/* Header                        */
+/* ============================= */
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.25rem 2rem;
+    border-bottom: 3px solid #198754;
+    background-color: #ffffff;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+    height: 80px;
+    max-width: 100%;
+}
+
+/* ============================= */
+/* MENU (AGORA BONITÃO 💅)       */
+/* ============================= */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    background: linear-gradient(135deg, #198754, #20a568);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.95rem;
+
+    padding: 0.6rem 1.1rem;
+    border-radius: 8px;
+
+    transition: all 0.25s ease;
+}
+
+/* ✨ HOVER COM "TCHAN" */
+
+.menu a:hover {
+    background: linear-gradient(135deg, #146c43, #198754);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
+}
+
+/* ============================= */
+/* Conteúdo principal            */
+/* ============================= */
+
+.conteudo-principal {
+    width: min(1100px, 100% - 2rem);
+    margin: 0 auto;
+    padding: 2rem 0 3rem;
+    display: grid;
+    gap: 2rem;
+}
+
+/* ============================= */
+/* Hero                          */
+/* ============================= */
+
+.hero {
+    background: linear-gradient(135deg, #198754, #20a568);
+    color: #ffffff;
+    border-radius: 1rem;
+    padding: 2.5rem;
+}
+
+.hero-texto {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.05rem;
+}
+
+/* ============================= */
+/* Seções                        */
+/* ============================= */
+
+.secao-info,
+.secao-cards {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.secao-info h2,
+.secao-cards h2 {
+    color: #198754;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+/* ============================= */
+/* Cards                         */
+/* ============================= */
+
+.grade-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dfe3e6;
+    border-left: 5px solid #198754;
+    border-radius: 0.9rem;
+    padding: 1.25rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.75rem;
+
+    min-height: 180px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-left-color 0.3s ease;
+}
+
+.card h3 {
+    color: #146c43;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.card p {
+    color: #444444;
+    font-size: 0.98rem;
+    transition: color 0.3s ease;
+}
+
+/* ✨ HOVER CARDS */
+
+.card:hover {
+    background: linear-gradient(135deg, #198754, #20a568);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(25, 135, 84, 0.25);
+    border-left-color: #ffffff;
+}
+
+.card:hover h3,
+.card:hover p {
+    color: #ffffff;
+}
+
+/* ============================= */
+/* Footer                        */
+/* ============================= */
+
+.rodape {
+    text-align: center;
+    padding: 1.25rem;
+    background-color: #198754;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+
+/* ============================= */
+/* Breakpoint Tablet             */
+/* ============================= */
+
+@media (max-width: 900px) {
+    .cabecalho {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .conteudo-principal {
+        width: min(100% - 1.5rem, 900px);
+        padding: 1.5rem 0 2.5rem;
+    }
+
+    .hero {
+        padding: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .grade-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ============================= */
+/* Breakpoint Mobile             */
+/* ============================= */
+
+@media (max-width: 600px) {
+    .cabecalho {
+        padding: 1rem;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.6rem;
+    }
+
+    .menu a {
+        width: 100%;
+        text-align: center;
+        padding: 0.7rem;
+        border-radius: 8px;
+    }
+
+    .conteudo-principal {
+        width: min(100% - 1rem, 600px);
+        gap: 1.25rem;
+        padding: 1rem 0 2rem;
+    }
+
+    .hero,
+    .secao-info,
+    .secao-cards {
+        padding: 1.25rem;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero p,
+    .secao-info p,
+    .card p {
+        font-size: 0.95rem;
+    }
+
+    .secao-info h2,
+    .secao-cards h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .grade-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        min-height: auto;
+        text-align: center;
+        align-items: center;
+    }
+}
