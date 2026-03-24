@@ -87,8 +87,6 @@ img {
     transition: all 0.25s ease;
 }
 
-/* ✨ HOVER COM "TCHAN" */
-
 .menu a:hover {
     background: linear-gradient(135deg, #146c43, #198754);
     transform: translateY(-2px);
