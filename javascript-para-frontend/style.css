@@ -1,0 +1,314 @@
+/* ============================= */
+/* Reset e configurações gerais  */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Courier New", monospace;
+    background-color: #f7f6fc;
+    color: #1d1838;
+    line-height: 1.6;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ============================= */
+/* Cabeçalho                     */
+/* ============================= */
+
+.cabecalho {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: linear-gradient(135deg, #322770, #4b3aa3, #6b58c7);
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(50, 39, 112, 0.18);
+}
+
+.cabecalho h1 {
+    margin-bottom: 0.5rem;
+    font-size: 1.55rem;
+}
+
+.cabecalho p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+}
+
+/* ============================= */
+/* Conteúdo principal            */
+/* ============================= */
+
+.conteudo-principal {
+    width: min(1100px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 2rem 0 3rem;
+}
+
+.exercicio h2 {
+    margin-bottom: 1rem;
+    color: #322770;
+    font-size: 1.25rem;
+}
+
+.bloco-exercicio {
+    background: #ffffff;
+    border: 1px solid #e1dcf6;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 6px 16px rgba(50, 39, 112, 0.06);
+}
+
+/* ============================= */
+/* Linha separadora              */
+/* ============================= */
+
+.divider {
+    width: 100%;
+    max-width: 900px;
+    height: 1px;
+    margin: 2rem auto;
+    background: linear-gradient(to right, transparent, #322770, transparent);
+    opacity: 0.28;
+}
+
+/* ============================= */
+/* Botões                        */
+/* ============================= */
+
+.botao {
+    border: none;
+    border-radius: 0.75rem;
+    padding: 0.85rem 1.2rem;
+    background: linear-gradient(135deg, #322770, #4b3aa3, #6b58c7);
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.botao:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(50, 39, 112, 0.25);
+    filter: brightness(1.05);
+}
+
+/* ============================= */
+/* Manipulação do DOM            */
+/* ============================= */
+
+.titulo-dom {
+    margin-bottom: 0.75rem;
+    color: #322770;
+}
+
+.paragrafo-dom {
+    margin-bottom: 1rem;
+}
+
+/* ============================= */
+/* Alternar classe CSS           */
+/* ============================= */
+
+.bloco-toggle {
+    padding: 2rem;
+    border: 2px solid #4b3aa3;
+    border-radius: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: #f1eefc;
+    transition: all 0.3s ease;
+}
+
+.ativo {
+    background: linear-gradient(135deg, #322770, #4b3aa3, #6b58c7);
+    color: #ffffff;
+    border-color: #322770;
+    transform: scale(1.02);
+    box-shadow: 0 8px 18px rgba(50, 39, 112, 0.2);
+}
+
+/* ============================= */
+/* Lista dinâmica                */
+/* ============================= */
+
+.grupo-campo {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.campo-texto {
+    flex: 1;
+    min-width: 240px;
+    padding: 0.85rem 1rem;
+    border: 1px solid #cdc6ef;
+    border-radius: 0.75rem;
+    outline: none;
+}
+
+.campo-texto:focus {
+    border-color: #4b3aa3;
+    box-shadow: 0 0 0 3px rgba(75, 58, 163, 0.12);
+}
+
+.lista-dinamica {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.lista-dinamica li {
+    padding: 0.9rem 1rem;
+    border-left: 5px solid #4b3aa3;
+    border-radius: 0.75rem;
+    background-color: #f7f5ff;
+}
+
+/* ============================= */
+/* Contador interativo           */
+/* ============================= */
+
+.contador-container {
+    display: grid;
+    gap: 1.25rem;
+    justify-items: center;
+}
+
+.contador-valor {
+    min-width: 140px;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #322770;
+    background: #f1eefc;
+    border: 1px solid #d7cff2;
+}
+
+.grupo-botoes {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ============================= */
+/* Interação com múltiplos cards */
+/* ============================= */
+
+.grade-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.card-interativo {
+    padding: 1.25rem;
+    border-radius: 1rem;
+    background: #ffffff;
+    border: 1px solid #dcd6ff;
+    box-shadow: 0 4px 12px rgba(50, 39, 112, 0.05);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-interativo h3 {
+    margin-bottom: 0.5rem;
+    color: #322770;
+}
+
+.card-interativo.destaque {
+    background: linear-gradient(135deg, #322770, #4b3aa3, #6b58c7);
+    color: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(50, 39, 112, 0.2);
+    border-color: transparent;
+}
+
+.card-interativo.destaque h3 {
+    color: #ffffff;
+}
+
+/* ============================= */
+/* Rodapé                        */
+/* ============================= */
+
+.rodape {
+    text-align: center;
+    padding: 1.25rem;
+    background: linear-gradient(135deg, #322770, #4b3aa3, #6b58c7);
+    color: #ffffff;
+    margin-top: 2rem;
+}
+
+/* ============================= */
+/* Responsividade                */
+/* ============================= */
+
+@media (max-width: 900px) {
+    .grade-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cabecalho h1 {
+        font-size: 1.35rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .conteudo-principal {
+        width: min(100% - 1rem, 600px);
+        padding: 1.25rem 0 2rem;
+    }
+
+    .cabecalho {
+        padding: 1.25rem 0.85rem;
+    }
+
+    .cabecalho h1 {
+        font-size: 1.2rem;
+    }
+
+    .cabecalho p {
+        font-size: 0.9rem;
+    }
+
+    .bloco-exercicio {
+        padding: 1.15rem;
+    }
+
+    .grade-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .grupo-campo {
+        flex-direction: column;
+    }
+
+    .campo-texto {
+        min-width: auto;
+    }
+
+    .grupo-botoes {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .grupo-botoes .botao,
+    .grupo-campo .botao {
+        width: 100%;
+    }
+}

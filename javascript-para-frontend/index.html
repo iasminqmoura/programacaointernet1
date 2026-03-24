@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercícios - JavaScript para Frontend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1>JavaScript para Frontend</h1>
+        <p>Manipulação do DOM, alternância de classes, listas dinâmicas, contador e interação entre múltiplos elementos.</p>
+    </header>
+
+    <main class="conteudo-principal">
+        <section class="exercicio">
+            <h2>Manipulação básica do DOM</h2>
+
+            <div class="bloco-exercicio">
+                <h3 class="titulo-dom">Título original</h3>
+                <p class="paragrafo-dom">Parágrafo original com conteúdo inicial.</p>
+                <button class="botao" id="botao-dom">Alterar conteúdo</button>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="exercicio">
+            <h2>Alternar classe CSS</h2>
+
+            <div class="bloco-exercicio">
+                <div class="bloco-toggle" id="bloco-toggle">
+                    Bloco para alternância de classe
+                </div>
+                <button class="botao" id="botao-toggle">Alternar classe</button>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="exercicio">
+            <h2>Lista dinâmica</h2>
+
+            <div class="bloco-exercicio">
+                <div class="grupo-campo">
+                    <input
+                        type="text"
+                        id="campo-item"
+                        class="campo-texto"
+                        placeholder="Digite um item para a lista"
+                    >
+                    <button class="botao" id="botao-adicionar">Adicionar item</button>
+                </div>
+
+                <ul class="lista-dinamica" id="lista-dinamica"></ul>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="exercicio">
+            <h2>Contador interativo</h2>
+
+            <div class="bloco-exercicio contador-container">
+                <div class="contador-valor" id="contador-valor">0</div>
+
+                <div class="grupo-botoes">
+                    <button class="botao" id="botao-incrementar">Incrementar</button>
+                    <button class="botao" id="botao-decrementar">Decrementar</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="exercicio">
+            <h2>Interação com múltiplos elementos</h2>
+
+            <div class="grade-cards">
+                <article class="card-interativo">
+                    <h3>Card 1</h3>
+                    <p>Conteúdo do primeiro card.</p>
+                </article>
+
+                <article class="card-interativo">
+                    <h3>Card 2</h3>
+                    <p>Conteúdo do segundo card.</p>
+                </article>
+
+                <article class="card-interativo">
+                    <h3>Card 3</h3>
+                    <p>Conteúdo do terceiro card.</p>
+                </article>
+
+                <article class="card-interativo">
+                    <h3>Card 4</h3>
+                    <p>Conteúdo do quarto card.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 - Exercícios de JavaScript para Frontend</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
