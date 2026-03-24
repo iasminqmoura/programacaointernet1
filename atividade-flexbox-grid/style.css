@@ -1,0 +1,618 @@
+/* ============================= */
+/* Reset e boas práticas         */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================= */
+/* Configuração geral da página  */
+/* ============================= */
+
+body {
+    font-family: "Courier New", monospace;
+    background-color: #f4ebf8;
+    color: #4b1360;
+}
+
+header {
+    text-align: center;
+    padding: 36px 20px;
+    background: linear-gradient(90deg, #6a0488, #8205a8, #9e2bc0);
+    color: white;
+    box-shadow: 0 4px 12px rgba(73, 10, 90, 0.15);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+main {
+    padding: 48px 40px 56px;
+}
+
+.exercicio {
+    margin-bottom: 0;
+}
+
+/* ============================= */
+/* Linha separadora              */
+/* ============================= */
+
+.divider {
+    width: 100%;
+    max-width: 900px;
+    height: 1px;
+    margin: 50px auto;
+    background: linear-gradient(to right, transparent, #8205a8, transparent);
+    opacity: 0.35;
+}
+
+/* ============================= */
+/* Exercício 1 – Flexbox linha   */
+/* ============================= */
+
+.exercicio1 {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 980px;
+    background: #ffffff;
+    padding: 22px 34px;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(90, 23, 114, 0.12);
+    border: 1px solid #ead6f1;
+}
+
+.logo {
+    background: linear-gradient(135deg, #6a0488, #8205a8, #9e2bc0);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(130, 5, 168, 0.25);
+}
+
+.menu {
+    display: flex;
+    gap: 42px;
+    list-style: none;
+    color: #6a0488;
+    font-weight: bold;
+}
+
+.btn-contato {
+    background: linear-gradient(135deg, #6a0488, #8205a8, #9e2bc0);
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-family: "Courier New", monospace;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(130, 5, 168, 0.25);
+}
+
+.btn-contato:hover {
+    filter: brightness(1.05);
+}
+
+/* ============================= */
+/* Exercício 2 – Flexbox wrap    */
+/* ============================= */
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+    padding: 24px;
+    background-color: #efe1f5;
+    border: 1px solid #dec3ea;
+    border-radius: 18px;
+}
+
+.card-item {
+    width: 220px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(90, 23, 114, 0.10);
+    border: 1px solid #ead6f1;
+}
+
+.card-topo {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 12px;
+    font-size: 1.1rem;
+}
+
+.card-corpo {
+    padding: 28px 18px;
+    text-align: center;
+    color: #5c2374;
+    font-size: 1rem;
+    min-height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topo1 {
+    background: linear-gradient(135deg, #4a025f, #5a0373);
+}
+
+.topo2 {
+    background: linear-gradient(135deg, #530269, #65047f);
+}
+
+.topo3 {
+    background: linear-gradient(135deg, #5b0371, #70048b);
+}
+
+.topo4 {
+    background: linear-gradient(135deg, #640379, #7a0597);
+}
+
+.topo5 {
+    background: linear-gradient(135deg, #6d0481, #8205a8);
+}
+
+.topo6 {
+    background: linear-gradient(135deg, #76058c, #8d12b0);
+}
+
+.topo7 {
+    background: linear-gradient(135deg, #7f1094, #9821b9);
+}
+
+.topo8 {
+    background: linear-gradient(135deg, #881d9d, #a130c1);
+}
+
+.topo9 {
+    background: linear-gradient(135deg, #9230a8, #ad50ca);
+}
+
+.topo10 {
+    background: linear-gradient(135deg, #9d49b3, #b96dd1);
+}
+
+.topo11 {
+    background: linear-gradient(135deg, #ab67c0, #c690dc);
+}
+
+.topo12 {
+    background: linear-gradient(135deg, #bc8bd0, #d8b6e9);
+    color: #4a025f;
+}
+
+/* ============================= */
+/* Exercício 3 – CSS Grid        */
+/* ============================= */
+
+.exercicio3 {
+    margin-top: 0;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 260px 280px;
+    gap: 18px;
+}
+
+.grid-card {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    min-height: 220px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 8px 18px rgba(90, 23, 114, 0.10);
+    border: 1px solid #ead6f1;
+}
+
+.card-a {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-image: url("https://i.pinimg.com/736x/df/ff/01/dfff01834da79aa2569d514d8dc655eb.jpg");
+}
+
+.card-b {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    background-image: url("https://i.pinimg.com/1200x/3e/95/9b/3e959b4d9405f051ddb65f9339b5e8c1.jpg");
+}
+
+.card-c {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    background-image: url("https://i.pinimg.com/736x/fa/93/70/fa93704d0706678b0a940e87efe2894a.jpg");
+}
+
+.card-d {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-image: url("https://i.pinimg.com/1200x/a7/61/22/a761224d725874e985610c6b65d51773.jpg");
+}
+
+.grid-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 26px;
+    color: white;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.18),
+        rgba(0, 0, 0, 0.48)
+    );
+}
+
+.grid-overlay h2 {
+    font-size: 1.35rem;
+    max-width: 80%;
+    line-height: 1.3;
+}
+
+.grid-overlay span {
+    align-self: flex-end;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+/* ============================= */
+/* Exercício 4 – Áreas nomeadas  */
+/* ============================= */
+
+.exercicio4 {
+    margin-top: 0;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 140px 210px 170px;
+    grid-template-areas:
+        "top-left top-center-left top-center-right top-right"
+        "left center center right"
+        "left bottom-center-left bottom-center-right right";
+    gap: 0;
+    border: 3px solid #8205a8;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(90, 23, 114, 0.10);
+}
+
+.area {
+    padding: 26px 22px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.area h2 {
+    margin: 0 0 12px 0;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.area p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    max-width: 95%;
+    opacity: 0.9;
+}
+
+.area-top-left {
+    grid-area: top-left;
+}
+
+.area-top-center-left {
+    grid-area: top-center-left;
+    align-items: center;
+    text-align: center;
+}
+
+.area-top-center-right {
+    grid-area: top-center-right;
+    align-items: center;
+    text-align: center;
+}
+
+.area-top-right {
+    grid-area: top-right;
+    align-items: center;
+    text-align: center;
+}
+
+.area-left {
+    grid-area: left;
+    align-items: center;
+    text-align: center;
+}
+
+.area-center {
+    grid-area: center;
+}
+
+.area-bottom-center-left {
+    grid-area: bottom-center-left;
+}
+
+.area-bottom-center-right {
+    grid-area: bottom-center-right;
+}
+
+.area-right {
+    grid-area: right;
+    justify-content: center;
+}
+
+.area-top-left,
+.area-center,
+.area-top-right {
+    background: linear-gradient(135deg, #2a0336, #3b0450);
+}
+
+.area-top-center-left,
+.area-bottom-center-left {
+    background: linear-gradient(135deg, #5b0a7a, #8205a8);
+}
+
+.area-top-center-right,
+.area-bottom-center-right {
+    background: linear-gradient(135deg, #7a1bb3, #a84fd6);
+}
+
+.area-left,
+.area-right {
+    background: linear-gradient(135deg, #4b0b66, #6e0d91);
+}
+
+/* ============================= */
+/* Exercício 5 – Grid + Flexbox  */
+/* ============================= */
+
+.exercicio5 {
+    margin-top: 0;
+}
+
+.layout-combinado {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "topo topo"
+        "conteudo sidebar"
+        "rodape rodape";
+    gap: 18px;
+    background: #fbf8fd;
+    border: 1px solid #e6d8ef;
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 8px 18px rgba(90, 23, 114, 0.10);
+}
+
+.layout-topo {
+    grid-area: topo;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    border-radius: 14px;
+    background: linear-gradient(90deg, #6a0488, #8205a8, #9e2bc0);
+    color: white;
+}
+
+.layout-logo {
+    background: linear-gradient(135deg, #d48cf0, #f0c3ff);
+    color: #4b1360;
+    padding: 12px 22px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.layout-menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.layout-menu a {
+    color: #f7eefe;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.layout-contato {
+    background: rgba(255, 255, 255, 0.14);
+    padding: 10px 16px;
+    border-radius: 10px;
+}
+
+.layout-conteudo {
+    grid-area: conteudo;
+    background: #f3edf7;
+    border-radius: 14px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.layout-conteudo h2 {
+    margin-bottom: 18px;
+    color: #4b1360;
+    font-size: 2rem;
+}
+
+.layout-conteudo p {
+    margin-bottom: 22px;
+    color: #6b4f7d;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.layout-botao {
+    align-self: flex-start;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 22px;
+    background: linear-gradient(135deg, #6a0488, #8205a8);
+    color: white;
+    font-family: "Courier New", monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.layout-sidebar {
+    grid-area: sidebar;
+    background: #f3edf7;
+    border-radius: 14px;
+    padding: 28px 24px;
+}
+
+.layout-sidebar h2 {
+    margin-bottom: 24px;
+    color: #4b1360;
+    font-size: 2rem;
+}
+
+.layout-sidebar ul {
+    list-style: none;
+}
+
+.layout-sidebar li {
+    margin-bottom: 20px;
+    color: #6b4f7d;
+    font-size: 1.1rem;
+}
+
+.layout-rodape {
+    grid-area: rodape;
+    background: linear-gradient(90deg, #5a4368, #6b5379);
+    color: white;
+    border-radius: 12px;
+    padding: 18px;
+    text-align: center;
+}
+
+.layout-rodape p {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* ============================= */
+/* Responsividade                */
+/* ============================= */
+
+@media (max-width: 900px) {
+    main {
+        padding: 28px 20px 40px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px 28px;
+    }
+
+    .grid-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .card-a,
+    .card-b,
+    .card-c,
+    .card-d {
+        grid-column: auto;
+        grid-row: auto;
+        min-height: 240px;
+    }
+
+    .grid-overlay h2 {
+        max-width: 100%;
+        font-size: 1.15rem;
+    }
+
+    .areas-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "top-left"
+            "top-center-left"
+            "top-center-right"
+            "top-right"
+            "left"
+            "center"
+            "bottom-center-left"
+            "bottom-center-right"
+            "right";
+    }
+
+    .area {
+        min-height: 140px;
+    }
+
+    .area-center,
+    .area-right,
+    .area-left {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .layout-combinado {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "topo"
+            "conteudo"
+            "sidebar"
+            "rodape";
+    }
+
+    .layout-topo {
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+    }
+
+    .layout-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .layout-conteudo h2,
+    .layout-sidebar h2 {
+        font-size: 1.6rem;
+    }
+}
