@@ -1,4 +1,4 @@
-# Classificação de Episódios de Episódios
+# Classificação de Episódios
 
 ## Descrição
 
