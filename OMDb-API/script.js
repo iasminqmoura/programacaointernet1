@@ -7,7 +7,6 @@ const episodesMatrix = document.getElementById("episodesMatrix");
 
 searchButton.addEventListener("click", buscarSerie);
 
-/* 🔥 ENTER funcionando */
 seriesInput.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
     buscarSerie();
@@ -80,7 +79,6 @@ async function criarMatriz(title, totalSeasons) {
 
     row.appendChild(label);
 
-    /* 🔥 container que quebra linha */
     const episodesList = document.createElement("div");
     episodesList.classList.add("episodes-list");
 
