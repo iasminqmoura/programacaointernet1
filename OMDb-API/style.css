@@ -68,7 +68,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-/* 🔥 AQUI ESTÁ A MUDANÇA PRINCIPAL */
 .matrix-container {
   overflow-x: visible;
 }
@@ -109,7 +108,6 @@ h1 {
   cursor: pointer;
 }
 
-/* hover que você pediu */
 .episode-cell:hover {
   transform: translateY(5px);
   filter: brightness(70%);
